@@ -1,6 +1,7 @@
 -module(yup).
 -record(splist, {left = [], right = []}).
 -export([interpreter/2]).
+-export([parse/2]).
 
 interpreter(Code, Tape) ->
 	register(parent, self()),
